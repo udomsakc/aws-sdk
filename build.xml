@@ -1,0 +1,33 @@
+<project default="usage" basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <taskdef uri="antlib:com.salesforce" classpath="lib/salesforce_ant_45.0/ant-salesforce.jar" />
+    <property file="build.properties"/>
+    <property environment="env"/>
+
+    <target name="retrieve" description="Retrieves AwsSdk package components.">
+        <sf:retrieve
+            username="${awssdk.username}"
+            password="${awssdk.password}"
+            serverurl="${awssdk.serverurl}"
+            retrieveTarget="src"
+            packageNames="Amazon Web Services SDK"
+        />
+    </target>
+
+    <target name="deploy" description="Deploys AwsSdk package components.">
+        <sf:deploy
+            username="${awssdk.username}"
+            password="${awssdk.password}"
+            serverurl="${awssdk.serverurl}"
+            deployRoot="src"
+        />
+    </target>
+
+    <target name="usage">
+        <java classname="org.apache.tools.ant.Main">
+            <arg value="-projecthelp"/>
+            <arg value="-quiet"/>
+        </java>
+    </target>
+
+</project>
