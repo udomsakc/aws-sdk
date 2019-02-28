@@ -1,4 +1,4 @@
-<a style="float: right;" href="https://githubsfdeploy.herokuapp.com">
+<a style="float: right;" href="https://githubsfdeploy.herokuapp.com?owner=bigassforce&amp;repo=aws-sdk&amp;ref=master">
     <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
 
@@ -26,7 +26,7 @@ SNS is an infrastructure for delivering messages. Publishers communicate asynchr
 
 #### Amazon Simple Storage Service (S3) SDK
 
-S3 is storage for the Internet. The [Apex client](https://github.com/bigassforce/aws-sdk/blob/master/src/classes/S3.cls) gives you a kind of [proxy](https://en.wikipedia.org/wiki/Proxy_pattern) for manipulating both buckets and contents. You can create and destroy objects, and presign a download URL, given the bucket name and the object key.
+S3 is storage for the Internet. The [Apex client](https://github.com/bigassforce/aws-sdk/blob/master/S3.cls) gives you a kind of [proxy](https://en.wikipedia.org/wiki/Proxy_pattern) for manipulating both buckets and contents. You can create and destroy objects, and presign a download URL, given the bucket name and the object key.
 
 <img src="https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/gsg/images/flowSignUpForS3.png" />
 
@@ -50,7 +50,7 @@ S3 is storage for the Internet. The [Apex client](https://github.com/bigassforce
 
 #### Amazon Elastic Cloud Compute (EC2) SDK
 
-EC2 provides scalable computing capacity in the cloud. The [Apex client](https://github.com/bigassforce/aws-sdk/blob/master/src/classes/Ec2.cls) calls services to launch instances, terminate instances, etc. The API responds synchronously, but bear in mind that the the instance state transitions take time.
+EC2 provides scalable computing capacity in the cloud. The [Apex client](https://github.com/bigassforce/aws-sdk/blob/master/Ec2.cls) calls services to launch instances, terminate instances, etc. The API responds synchronously, but bear in mind that the the instance state transitions take time.
 
 <img src="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/instance_lifecycle.png" />
 
