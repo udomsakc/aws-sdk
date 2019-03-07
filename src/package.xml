@@ -3,13 +3,8 @@
     <fullName>Amazon Web Services SDK</fullName>
     <apiAccessLevel>Unrestricted</apiAccessLevel>
     <types>
-        <members>Ec2</members>
-        <members>Ec2Test</members>
-        <members>S3</members>
-        <members>S3Test</members>
-        <members>Sns</members>
-        <members>SnsTest</members>
-        <name>ApexClass</name>
+        <members>AwsSdk</members>
+        <name>InstalledPackage</name>
     </types>
     <version>45.0</version>
 </Package>
